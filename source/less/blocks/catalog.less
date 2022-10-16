@@ -1,0 +1,48 @@
+.catalog {
+  background-color: @bg-grey-light;
+}
+
+.catalog__container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
+.catalog__badge {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 30px;
+  }
+}
