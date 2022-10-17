@@ -21,6 +21,15 @@
 
 .card__link-image {
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card__image {
@@ -36,6 +45,15 @@
   color: @base-black;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: @primary-light;
+  }
+
+  &:active {
+    color: @primary-dark;
+  }
 }
 
 .card__title {
