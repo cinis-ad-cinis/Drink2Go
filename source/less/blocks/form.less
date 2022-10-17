@@ -98,7 +98,6 @@
   position: relative;
   display: block;
   padding-left: 34px;
-  cursor: pointer;
 
   &:hover .form__control-mark::before {
     background-color: @primary-opacity;
@@ -110,7 +109,6 @@
   position: relative;
   display: block;
   padding-left: 52px;
-  cursor: pointer;
 
   &:hover .form__control-mark {
     box-shadow: 0 0 0 2px @primary-light inset;
@@ -124,6 +122,8 @@
   left: 0;
   transform: translateY(-50%);
   height: 24px;
+  cursor: pointer;
+
 
   &--radio {
     width: 24px;
@@ -149,9 +149,6 @@
     border-radius: 50%;
     transition: all 0.2s ease-out;
   }
-}
-
-.form__control-label {
 }
 
 .form__input-radio {
@@ -214,7 +211,7 @@
     left: 20px;
   }
 
-  &:focus + .form__control-mark {
+  &:focus-visible + .form__control-mark::before {
     box-shadow: 0 0 0 2px @primary-light inset;
     background-color: @primary-opacity;
   }

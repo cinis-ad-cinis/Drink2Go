@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -50,7 +51,7 @@
           <ul class="nav__list user-list">
             <li class="user-list__item">
               <a class="user-list__link" href="#">
-                <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16">
+                <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" role="img">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-user"></use>
                 </svg>
                 <span class="user-list__text">Войти</span>
@@ -59,7 +60,7 @@
             </li>
             <li class="user-list__item">
               <a class="user-list__link" href="#">
-                <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16">
+                <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" role="img">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-basket"></use>
                 </svg>
                 <span class="user-list__text">Корзина</span>
@@ -211,9 +212,9 @@
                     </div>
                   </div>
                   <div class="range__inputs-container">
-                    <label class="visually-hidden" for="min-price">от</label>
+                    <label class="visually-hidden" for="min-price">Минимальная цена.</label>
                     <input class="range__input range__input--min" type="number" name="min-price" id="min-price" min="0" max="10000" placeholder="0">
-                    <label class="visually-hidden" for="max-price">до</label>
+                    <label class="visually-hidden" for="max-price">Максимальная цена.</label>
                     <input class="range__input range__input--max" type="number" name="max-price" id="max-price" min="0" max="10000" value="900">
                   </div>
                 </div>
@@ -313,7 +314,7 @@
               </div>
 
               <ul class="products__list">
-                <li class="products__item card">
+                <li class="products__item card" tabindex="0">
                   <a class="card__link-image" href="#">
                     <picture>
                       <img class="card__image" src="img/catalog/catalog-image-01.png" srcset="img/catalog/catalog-image-01@2x.png 2x"
@@ -329,7 +330,7 @@
                     <button class="card__button button button--add" type="button">В корзину</button>
                   </div>
                 </li>
-                <li class="products__item card">
+                <li class="products__item card" tabindex="0">
                   <a class="card__link-image" href="#">
                     <picture>
                       <img class="card__image" src="img/catalog/catalog-image-02.png" srcset="img/catalog/catalog-image-02@2x.png 2x"
@@ -345,7 +346,7 @@
                     <button class="card__button button button--add" type="button">В корзину</button>
                   </div>
                 </li>
-                <li class="products__item card">
+                <li class="products__item card" tabindex="0">
                   <a class="card__link-image" href="#">
                     <picture>
                       <img class="card__image" src="img/catalog/catalog-image-03.png" srcset="img/catalog/catalog-image-03@2x.png 2x"
@@ -361,7 +362,7 @@
                     <button class="card__button button button--add" type="button">В корзину</button>
                   </div>
                 </li>
-                <li class="products__item card">
+                <li class="products__item card" tabindex="0">
                   <a class="card__link-image" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/catalog/catalog-image-04.webp 1x, img/catalog/catalog-image-04@2x.webp 2x">
@@ -378,7 +379,7 @@
                     <button class="card__button button button--add" type="button">В корзину</button>
                   </div>
                 </li>
-                <li class="products__item card">
+                <li class="products__item card" tabindex="0">
                   <a class="card__link-image" href="#">
                     <picture>
                       <img class="card__image" src="img/catalog/catalog-image-05.png" srcset="img/catalog/catalog-image-05@2x.png 2x"
@@ -394,7 +395,7 @@
                     <button class="card__button button button--add" type="button">В корзину</button>
                   </div>
                 </li>
-                <li class="products__item card">
+                <li class="products__item card" tabindex="0">
                   <a class="card__link-image" href="#">
                     <picture>
                       <img class="card__image" src="img/catalog/catalog-image-06.png" srcset="img/catalog/catalog-image-06@2x.png 2x"
@@ -477,7 +478,7 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20">
+                  <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-vk"></use>
                   </svg>
                   <span class="visually-hidden">Ссылка на профиль VKontakte.</span>
@@ -485,7 +486,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg class="social__icon social__icon--pinterest" aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 22 22">
+                  <svg class="social__icon social__icon--pinterest" aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 22 22" role="img">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-pinterest"></use>
                   </svg>
                   <span class="visually-hidden">Ссылка на профиль Pinterest.</span>
@@ -493,7 +494,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20">
+                  <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-ok"></use>
                   </svg>
                   <span class="visually-hidden">Ссылка на профиль в социальной сети Одноклассники.</span>
@@ -553,10 +554,10 @@
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано в
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-              <svg class="copyright__icon" aria-hidden="true" focusable="false" width="12" height="16" viewBox="0 0 12 16">
+              <svg class="copyright__icon" aria-hidden="true" focusable="false" width="12" height="16" viewBox="0 0 12 16" role="img">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-academy"></use>
               </svg>
-              <span class="visually-hidden">Логотип HTML Academy</span>
+              <span class="visually-hidden">Логотип HTML Academy.</span>
             </a>
           </p>
         </div>
